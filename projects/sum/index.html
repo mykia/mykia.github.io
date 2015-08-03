@@ -6,22 +6,57 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     </head>
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            color:red;
+        }
+        .well{
+            background-color:black;
+            padding: 0px;
+            border: black;
+        }
+        #result {
+            background-color:black;
+            color:white;
+            font-size: 30px;
+            text-align:center;
+            padding-top: 45px;
+        }
+        form {
+            background-color:black;
+            padding-top: 40px;
+            
+        }
+        input{
+            font-size:23px;
+            text-align: center;
+        }
+        .btn-danger {
+            padding: 12px 15px;
+            margin-top: 45px;
+            font-size: 25px;
+        }
+       
+    </style>
     </head>
     <body>
         <div class="contents text-center">
-            <h1>Sum!</h1>
+            <h1>B A M !</h1>
             <div class="well">
                 <form id="input-form" style="padding-bottom: 20px;">
-                    <input type="number" id="num-one"/>
+                    <input type="text" id="num-one"/>
                     
                     <!--TODO 1 : Create an input element of type number with id num-two -->
+                    <input type="text" id="num-two"/>
                     
-                    
-                    <input type="submit" value="Submit"/>
+                    <input type="submit" value="Hit it!"/>
                 </form>
                 <div id="result"></div>
             </div>
-            <button id="btn-clear-form" type="button" class="btn btn-primary">Clear</button>
+            <button id="btn-clear-form" type="button" class="btn btn-danger">Try Again</button>
         </div>
         <script>
             $(document).ready(function() {
@@ -29,12 +64,13 @@
                     event.preventDefault();
                     
                     // TODO 2 : create var a, and assign to the expression: document.getElementById("num-one").value;
-                    
+                    var a = parseFloat(document.getElementById("num-one").value);
                     
                     // TODO 3 : create var b, and assign it to the value of the element with id "num-two" (see TODO 1 for example)
-                    
+                    var b = parseFloat(document.getElementById("num-two").value);
                     
                     // TODO 4: create var result and assign to it the sum of a and b //
+                    var result = (a +b);
                     
                     
                     document.getElementById("result").innerHTML = result;
