@@ -1,0 +1,30 @@
+
+body {
+    background-color: #111;
+}
+h1 {
+    color: #fff;
+    font-family: 'Gravitas One', cursive;
+    text-align: center;
+    margin: 100px;
+    text-shadow: 5px 1px 5px #000;
+    font-size: 60px;
+    border: 10px dotted #111;
+    padding: 10px 0px;
+}
+
+#button {
+    background: #111;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding: 20px 30px;
+    color: #fff;
+    margin-left: 550px;
+    border-radius: 75px;
+}
+
+#button:hover {
+    background: #323232;
+    text-decoration: none;
+    transition: all ease 0.5s;
+}
