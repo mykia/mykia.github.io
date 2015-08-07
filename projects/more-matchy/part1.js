@@ -476,12 +476,10 @@ function newPerson(species, tagline, noises, friends, matches) {
 //     for  key in animal[i](orsomething) x-keys in each animal
 //          if the animal[i]key(orsomething) is not in toKeep, delete it  
 
-function cleanseData(collection, keepArray) {
-    var toKeep = keepArray;
-
+function cleanseData(collection, keep) {
     for (var i = 0; i < collection.length; i++) {
         for (var key in collection[i]) {
-            if (toKeep.indexOf(key) !== -1) {
+            if (keep.indexOf(key) === -1) {
                 delete collection[i][key];
             }
 
@@ -490,3 +488,5 @@ function cleanseData(collection, keepArray) {
     }
 
 }
+
+console.log(cleanseData(allAnimals, ['tagline']));
