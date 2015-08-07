@@ -35,24 +35,41 @@
             $('#container').prepend('<div>hello</div>');
             $('#container').append('<div>goodbye</div>');
             $('body').prepend('<div>prepend new div</div>');
-            $('body').after('<div>new div after</div>');
-            $("#container .holder:not(':eq(1)')").prepend("<div id='first'>yo</div>");
-            $("#container .holder:not(':eq(0)')").append("<div id='first'>WORD</div>");
-            var newDetachedDiv = document.createElement('div');
-            var txt = document.createTextNode('This is the text in new element.');
-            newDetachedDiv.appendChild(txt);
-            $(newDetachedDiv).css('background-color','green');
-            //$('body').append(newDetachedDiv);
-           document.body.appendChild(newDetachedDiv);
+            $('<div>new div after</div>').after('body');
+            $("#container .holder:not(':eq(1)')").before("<div id='first'>yo</div>");
+            $("#container .holder:not(':eq(0)')").after("<div id='first'>WORD</div>");
+            //or
+           // $(".holder:first").append(...);
+           // $(".holder:last").after(...);
+            
+            //var newDetachedDiv = document.createElement('div');
+            var newDetachedDiv = $('<div>This is a new detached div</div>');
+            
+           // var txt = document.createTextNode('This is the text in new element.');
+            //newDetachedDiv.appendChild(txt);
+            $(newDetachedDiv).css("font-size", "50px");
+            $('body').append(newDetachedDiv);
+          // document.body.appendChild(newDetachedDiv);
         //Run this code: $('div').remove(); What does it do?
             //It removes all the divs from the page, leaving an empty page
         //Reload the page and do this: $('#container').empty(); How is that different than above
            //This empties only the contents of the #container div
         //What does this code do? var orphanNode = $('#target').detach();
-            //This removes the p element with the target id
+            //This removes the p element with the id of target
+            //It removes the element from the DOM
         //Now try adding: $('#container').append(orphanNode); Why would this be useful?
             /*this adds that target p tag to the end of the container div. this could be 
             useful if you need to move an existing element */
+            
+        //$("li").not(":even").css("background-color", "#344992");    
+            
+    //       setTimeout(function() {
+    //     $("#container").css("background-color", "#efd454");
+    //     $(newDetachedDiv).css("background-color", "#a55");
+    //     $("div").not(":eq(0)").css('background-color','#020346');
+    //     $("li").not(":odd").css("background-color", "#465abc");
+    //   // $("div").css("marginTop", "");
+    //     }, 4000 );
         </script>
     </body>
 </html>
