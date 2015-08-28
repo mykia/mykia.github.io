@@ -1,6 +1,6 @@
   body {
-      background: rgb(35, 203, 214);
-      color: rgb(210, 73, 28);
+      background: #23CBD6;
+      color: #D2491C;
       padding: 10px;
       font-family: arial;
   }
@@ -17,7 +17,7 @@
   /* navigation menu */
   
   nav {
-      background: rgb(186, 172, 178);
+      background: #BAACB2;
       margin: 0 auto;
       margin-bottom: 20px;
       display: flex;
@@ -94,23 +94,23 @@
   }
   /* portfolio styles */
   
-  /*#portfolio {*/
-  /*    list-style-type: none;*/
-  /*    padding-left: 0;*/
-  /*}*/
+  #portfolio {
+      list-style-type: none;
+      padding-left: 0;
+  }
   
-  /*#portfolio li {*/
-  /*    background: #fff;*/
-  /*    padding: 10px;*/
-  /*    border-radius: 10px;*/
-  /*    margin-bottom: 10px;*/
-  /*}*/
+  #portfolio li {
+      background: #D2491C;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+  }
   
-  /*#portfolio li:hover {*/
-  /*    background: #eee;*/
-  /*}*/
+  #portfolio li:hover {
+      background: #eee;
+  }
   
-  /*#portfolio a {*/
-  /*    text-decoration: none;*/
-  /*    color: #454545;*/
-  /*}*/
+  #portfolio a {
+      text-decoration: none;
+      color: #454545;
+  }
