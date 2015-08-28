@@ -1,0 +1,20 @@
+/*body {*/
+/*    background: #888;*/
+/*}*/
+            
+            
+
+h1 {    
+    margin-top: 80px;
+}
+
+.row {
+    background: #fff;
+    display: -webkit-flex;
+   display: flex;
+   margin-bottom: 30px;
+   padding-bottom: 10px;
+}
+
+
+    

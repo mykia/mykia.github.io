@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>jQuery Two</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>jQuery Two : Simple Project</h1>
+    <!-- YOUR HTML MARKUP GOES BELOW THIS COMMENT  -->
+    
+    
+    
+    
+    <!-- YOUR HTML MARKUP GOES ABOVE THIS COMMENT  -->
+  </div>
+  <script>
+    $(document).ready(function() {
+        // YOUR JAVASCRIPT CODE GOES BELOW THIS COMMENT //
+      var $myDiv = $('<div/>');
+      var $p = $('<p/>');
+      var $span = $('<span/>');
+      
+      $myDiv.addClass('myDivClass');
+      $myDiv.html( 'jQuery is Lame!' );
+      //console.log($myDiv);
+      
+      $p.html('This is my first paragraph');
+      $p.text('This is using the .text method');
+      $span.html('Span Element');
+      $span.css("background", "red");
+      
+      $('body').append(($span).append($myDiv));
+      //$('.myDivClass').css({'width':'200px', 'height': '200px', 'background':'blue', 'color':'#fff', 'padding':'100px 400px', 'font-size':'40px', 'font-weight':'bold'});
+      
+        
+        // YOUR JAVASCRIPT CODE GOES ABOVE THIS COMMENT //
+    });
+  </script>
+</body>
+
+</html>
