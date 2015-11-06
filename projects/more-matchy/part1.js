@@ -314,8 +314,8 @@ var nonFriends = function(animal, list) {
 var nonFriends = function(animals, animal) {
     var nonFriendsArr = [];
     var friends = animal.relationships.friends;
-    var i, currentAnimal;
-    for (i = 0; i < animals.length; i++) {
+    var currentAnimal;
+    for (var i = 0; i < animals.length; i++) {
         currentAnimal = animals[i].species;
         if (friends.indexOf(currentAnimal) === -1) {
 
@@ -344,7 +344,7 @@ var nonFriends = function(animals, animal) {
 function search(query) {
     var searchResults = [];
     for (var i = 0; i < allAnimals.length; i++) {
-        if (allAnimals[i].species.indexOf(query) !== -1) {
+        if (allAnimals[i].species === query) {
             searchResults.push(allAnimals[i]);
         }
         else if (allAnimals[i].relationships.friends.indexOf(query) !== -1) {

@@ -53,7 +53,9 @@
 body {
      font-family: 'Arvo', 'san serif';
     background-color: #000;
-    background-image: url("http://cdn.spacetelescope.org/archives/images/screen/heic0309c.jpg");
+    /*background-image: url("http://cdn.spacetelescope.org/archives/images/screen/heic0309c.jpg");*/
+    background-image: url("https://yt3.ggpht.com/-UqZ1JKav00Q/AAAAAAAAAAI/AAAAAAAAAAA/YKBnbgUTIKU/s900-c-k-no/photo.jpg");
+    background-repeat: repeat-y;
 }
 
 h1 {
