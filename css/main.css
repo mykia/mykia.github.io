@@ -57,7 +57,7 @@ a:focus {
 }
 .title-small {
   font-size: 38px;
-  color: #3f51b5;
+  color: #E32162;
   margin-bottom: 30px;
   line-height: 50px;
 }
@@ -84,7 +84,7 @@ a:focus {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   padding: 0!important;
-  background: #3f51b5 !important;
+  background: #fee74d !important;
 }
 .sticky-navigation .row {
   padding: 0;
@@ -109,6 +109,8 @@ a:focus {
   transition: transform 0.4s;
   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  background-color: #fee74d !important;
+  color: #333;
 }
 .navbar-nav {
   margin: 0;
@@ -131,7 +133,7 @@ a:focus {
 }
 .navbar .navbar-nav li a:hover,
 .navbar .navbar-nav li .active a {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.4);
 }
 .show-menu .navbar.menu-wrap {
   -webkit-transform: translate3d(0, 0, 0);
@@ -229,6 +231,7 @@ a:focus {
 .hero-area .contents h1 {
   font-size: 30px;
   font-weight: 100;
+  font-family: 'Rock Salt';
 }
 .hero-area .contents p {
   font-size: 16px;
@@ -267,7 +270,7 @@ a:focus {
   }
 }
 #features {
-  background: #fff;
+  background: #ecf0f1;
 }
 #features .features {
   margin: 30px 0;
@@ -282,13 +285,13 @@ a:focus {
   line-height: 80px;
   border-radius: 50%;
   font-size: 36px;
-  color: #3f51b5;
+  color: #fee74d;
 }
 #features .features h4 {
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
-  color: #3f51b5;
+  color: #E32162;
 }
 #features .features .features-text {
   padding-left: 80px;
@@ -366,7 +369,7 @@ a:focus {
   padding-bottom: 40px;
 }
 #services .box-item .icon {
-  background: #3F51B5;
+  background: #3f51b5;
   text-align: center;
   margin-top: 12px;
   -webkit-transition: background 0.2s, color 0.2s;
@@ -396,7 +399,7 @@ a:focus {
   line-height: 18px;
 }
 #services .box-item:hover .icon {
-  background: #3F51B5;
+  background: #3f51b5;
 }
 #services .box-item:hover .icon i {
   color: #ffffff;
@@ -405,7 +408,7 @@ a:focus {
   padding: 22px 64px;
 }
 #why {
-  background: url(../img/hero-code.jpeg);
+  background: url(../img/c3.jpg);
   background-size: cover;
   color: #fff;
 }
@@ -593,7 +596,8 @@ a:focus {
 }
 #testimonial {
   width: 100%;
-  background: url(../img/testimonial-bg.jpg);
+  background: url(../img/c3.jpg);
+  background-size: cover;
 }
 #testimonial .section-title {
   color: #fff;
@@ -752,6 +756,7 @@ a:focus {
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
   text-align: center;
+  background-color: #E32162 !important;
 }
 .back-to-top i {
   line-height: 56px;
